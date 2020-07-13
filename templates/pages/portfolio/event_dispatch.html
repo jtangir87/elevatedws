@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>Event Dispatch</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/event-dispatch.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/event-dispatch2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/event-dispatch3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: App</li>
+              <li><strong>Client</strong>: Event Dispatch</li>
+              <li><strong>Project date</strong>: September 2019</li>
+              <li><strong>Project URL</strong>: <a href="https://www.eventdispatch.com" target="_blank">www.eventdispatch.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Event Dispatch</h2>
+          <p>
+            Event Dispatch was designed for the mobile event industry to meet specific needs for employee scheduling. The main features of the project included SMS and email notifications, Subscribed calendar integrations, Time Clock tracking, and in-app notifications.
+            What made this project so unique was the database architecture. It was critical that employees who requested time off were not displayed in the staffing dropdowns and also any employee on a shift with conflicting times should be removed from the options dropdown as well. 
+            Also, employees could have multiple skills all with different flat and hourly payrates. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}
