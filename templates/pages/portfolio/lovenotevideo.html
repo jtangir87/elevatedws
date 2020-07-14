@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}App Portfolio | Advanced Content Creation | Love Note Video Interactive Video Creator {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>Love Note Video</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/lnv.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/lnv2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/lnv3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: App / Advanced Content Creation</li>
+              <li><strong>Client</strong>: <a href="https://www.lovenotevideo.com" target="_blank">Love Note Video</a></li>
+              <li><strong>Project date</strong>: May 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://www.lovenotevideo.com" target="_blank">www.lovenotevideo.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Love Note Video</h1>
+          <p>
+            This was a fun and unique 2-part project. Part 1 was the user facing landing page and interactive dashboards. The development process included creating an event (called a Love Note), generating
+            shareable links that customers could text or email to their friends and family inviting them to upload video submissions, the submissions were they converted and processed on the server, and finally the customer
+            could order and approve each individual submission before submitting payment. 
+          </p>
+          <p>
+            Part 2 were the 2 admin dashboards. The main admin dashboard was for the site managers. From there, they could see all site activity, new signups, new Love Notes, pending projects, create coupon codes, and most importantly when 
+            a Love Note Video was submitted for publishing there was a notification for them to assign an editor. That took us to the 2nd dashboard called the Editor Dashboard. Editors logged in to see their projects and were able to download 
+            the raw pre-processed original files which were renamed with the approval order prior to download and also upload their final edited product. 
+            <br>
+            We Elevated this process by adding a ton of automated notifications for the user whenever a video was submitted, reminders for publishing deadlines and for the admins whenever a project was submitted for publishing.
+          </p>
+          <p>
+            The last step was the Advanced Content Creation. The logo was beautifully designed to be fun, colorful and be a visual representation of the product. Our designers worked with the client to pick out the sitewide color scheme and full Web Design.
+            For a web application that provides a service to the user, it was important to educate the users. First, we set up the FAQ and then we worked on multiple videos including: A How-To, A site "Commercial" to show the features, and many samples. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

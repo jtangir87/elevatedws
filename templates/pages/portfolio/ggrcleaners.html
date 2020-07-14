@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}Web Portfolio | Global Garment Resortartion and Cleaners {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>Global Garment Restoration & Cleaners</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/ggrc.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/ggrc2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/ggrc3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website</li>
+              <li><strong>Client</strong>: <a href="http://www.goroyalnow.com" target="_blank">Royal Family Holdings</a></li>
+              <li><strong>Project date</strong>: July 2020</li>
+              <li><strong>Project URL</strong>: <a href="http://www.ggrcleaners.com" target="_blank">www.ggrcleaners.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Global Garment Restoration & Cleaners</h1>
+          <p>
+            Global Garment Restoration & Cleaners needed a visually pleasing info-site to clearly show customers the services they provide. The goal of the project was to clearly and effectively
+            outline the products and services with a focus on their customer service practices and state-of-the-art cleaning techniques. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

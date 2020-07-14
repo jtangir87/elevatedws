@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title_tag %}App Portfolio | Event Dispatch Staff Scheduling App{% endblock title_tag %}
 {% block content %}
 
   <main id="main">
@@ -36,7 +37,7 @@
             <h3>Project information</h3>
             <ul>
               <li><strong>Category</strong>: App</li>
-              <li><strong>Client</strong>: Event Dispatch</li>
+              <li><strong>Client</strong>: <a href="https://www.eventdispatch.com" target="_blank">Event Dispatch</a></li>
               <li><strong>Project date</strong>: September 2019</li>
               <li><strong>Project URL</strong>: <a href="https://www.eventdispatch.com" target="_blank">www.eventdispatch.com</a></li>
             </ul>
@@ -45,11 +46,15 @@
         </div>
 
         <div class="portfolio-description">
-          <h2>Event Dispatch</h2>
+          <h1>Event Dispatch</h1>
           <p>
             Event Dispatch was designed for the mobile event industry to meet specific needs for employee scheduling. The main features of the project included SMS and email notifications, Subscribed calendar integrations, Time Clock tracking, and in-app notifications.
             What made this project so unique was the database architecture. It was critical that employees who requested time off were not displayed in the staffing dropdowns and also any employee on a shift with conflicting times should be removed from the options dropdown as well. 
-            Also, employees could have multiple skills all with different flat and hourly payrates. 
+            Also, employees could have multiple skills all with different flat and hourly payrates. Event Dispatch has 4 monthly subscription plans that are powered by Stripe and all the payment processing is handled on their server but no payment information is stored there for security reasons. 
+            Data privacy and safety was top priority and we took that into consideration every step of the way. 
+          </p>
+          <p>
+            Our favorite feature is the "Shift Wizard" ... an interactive in-window modal aka pop-up that allows staff managers to sort and filter employees based on availability, skills, transportation or other fields. 
           </p>
         </div>
       </div>
