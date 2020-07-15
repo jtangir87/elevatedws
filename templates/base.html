@@ -9,7 +9,11 @@
   <title>Elevated Web Systems | {% block title_tag %}{% endblock title_tag %}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.elevatedwebsystems.com" />
+	<meta property="og:title" content="Elevated Web Systems" />
+	<meta property="og:description" content="Elevated Web Systems and Solutions for digital business growth" />
+    <meta property="og:image" content="{% static 'img/elevatedws-og-img.png' %}" />
   <!-- Favicons -->
   <link href="{% static 'img/favicon.png' %}" rel="icon">
   <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
@@ -39,7 +43,7 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an text logo -->
         <!-- <h1><a href="index.html">NewBiz</a></h1> -->
-        <a href="{% url 'home' %}"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo-navy.png' %}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -64,7 +68,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>Elevated </br>Web Systems</h3>
+            <img src="{% static 'img/logo-white.png' %}" alt="" class="img-fluid" style="margin-bottom:10px;">
             <p>Creating elevated web based solutions for small and medium sized businesses with advanced features and attention to detail.</p>
           </div>
 
