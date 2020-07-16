@@ -1,10 +1,11 @@
 from django.urls import path
 from django.views.generic import TemplateView
-from .views import contact_us
+from .views import contact_us, consultation_form
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path('contact', contact_us, name="contact_us"),
+    path('consultation-request', consultation_form, name="consultation_form"),
 
 
     ## PORTFOLIO DETAILS ##
@@ -14,4 +15,8 @@ urlpatterns = [
         template_name="pages/portfolio/ggrcleaners.html"), name="port_ggrc"),
     path('portfolio/love-note-video-interactive-web-application', TemplateView.as_view(
         template_name="pages/portfolio/lovenotevideo.html"), name="port_lovenotevideo"),
+    path('portfolio/event-rsvp-custom-web-application', TemplateView.as_view(
+        template_name="pages/portfolio/mitzvahrsvp.html"), name="port_mitzvahrsvp"),
+    path('portfolio/catertogo-e-commerce-platform', TemplateView.as_view(
+        template_name="pages/portfolio/catertogo.html"), name="port_catertogo"),
 ]

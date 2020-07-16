@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}App Portfolio | Cater To Go | E-Commerce Site {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Cater To Go</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/catertogo.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/catertogo2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/catertogo3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: App </li>
+              <li><strong>Client</strong>: SaaS </li>
+              <li><strong>Project date</strong>: March/April 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://www.infinity.catertogo.com" target="_blank">www.infinity.catertogo.com</a></li>
+              <li><strong>Project URL</strong>: <a href="https://www.bandt.catertogo.com" target="_blank">www.bandt.catertogo.com</a></li>
+              <li><strong>Project URL</strong>: <a href="https://www.classical.catertogo.com" target="_blank">www.classical.catertogo.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Cater To Go</h1>
+          <p>
+            COVID-19 created havoc in the event industry. It shut down on a moments notice and a lot of businesses were forced to pivot in order stay afloat. Apps like DoorDash, Caviar, UberEats steal 30% of the total order from the vendor. Catering companies trying to survive the pandemic 
+            would not be able to sustain that. Hello Cater To Go! Instead of Cater To Go charging the vendor a percentage of the order, the customer pays a small service fee at checkout. 
+          </p>
+          <p>
+            Elevated Web Systems designed an online ordering platform that allowed the vendor to have complete control of their menu, categories, wording, and site-design. The complex project utilized the Stripe Connect platform to make sure the vendor was paid instantly and we built out a 
+            full-featured dashboard for the vendor to track incoming orders, revenue, sales tax, and generate reports. The dashboard gave them the ability to set order minimums, free delivery for orders over a certain amount, and many more. 
+          </p>
+          <p>
+            Email notifications were a major part of the system. Customers were emailed their order confirmation and receipt and the vendor was emailed an order notification with complete details for every item in the order.
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

@@ -5,7 +5,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161613752-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-161613752-2');
+    </script>
   <title>Elevated Web Systems | {% block title_tag %}{% endblock title_tag %}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -28,6 +36,7 @@
   <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -39,28 +48,55 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an text logo -->
+                <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+                <a href="{% url 'home' %}"><img src="{% static 'img/logo-navy.png' %}" alt="" class="img-fluid"></a>
+            </div>
 
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <!-- <h1><a href="index.html">NewBiz</a></h1> -->
-        <a href="{% url 'home' %}"><img src="{% static 'img/logo-navy.png' %}" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-client-login"><a href="#">Client Login</a></li>
-        </ul>
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li class="nav-client-login"><a href="{% url 'login'%}">Client Login</a></li>
+                </ul>
       </nav><!-- .main-nav -->
+      </div>
+      </div>
+    {% if messages %}
+        <div class="row">
+            <div class="col-12">
+            {% for message in messages %}
+                <div class="alert alert-{{message.tags}} alert-dismissible fade show mt-2" role="alert" data-aos="fade-up">
+                <h5 class="text-alert">{{ message }}</h5>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span class="text-alert" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+
     </div>
   </header><!-- #header -->
 
 {% block content %}
 {% endblock content %}
+
+
+<div class="modal fade" id="modal-base">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -125,7 +161,7 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
   <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>

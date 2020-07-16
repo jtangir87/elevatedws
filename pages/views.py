@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.template.loader import get_template
 from django.http import JsonResponse
 from django.core.mail import send_mail
+from .forms import ConsultationForm
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 # Create your views here.
 
 
@@ -25,10 +28,43 @@ def contact_us(request):
             "EWS Contact Us",
             content,
             "{}<{}>".format(name, email),
-            ['office@ggrcleaners.com'],
+            ['info@elevatedwebsystems.com'],
             fail_silently=False,
         )
         data["form_is_valid"] = True
     else:
         data["form_is_valid"] = False
     return JsonResponse(data)
+
+
+def consultation_form(request):
+    if request.method == "POST":
+        form = ConsultationForm(request.POST or None)
+        if form.is_valid():
+            data = form.cleaned_data
+            template = get_template("pages/consultation_email.txt")
+            context = {
+                'name': data["name"],
+                'email': data["email"],
+                'phone': data["phone"],
+                "date": data["date"],
+                "description": data["description"]
+            }
+
+            content = template.render(context)
+            send_mail(
+                "EWS Consultation",
+                content,
+                "{}<{}>".format(data["name"], data["email"]),
+                ['info@elevatedwebsystems.com'],
+                fail_silently=False,
+            )
+            messages.success(
+                request, "Thank you! We will contact soon to setup your consultation!")
+            return HttpResponseRedirect('/')
+        else:
+            form = ConsultationForm(request.POST)
+    else:
+        form = ConsultationForm()
+
+    return render(request, 'pages/consultation_form.html', {'form': form})

@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #74b5fc;
+  color: #69caf0;
   text-decoration: underline;
 }
 
@@ -464,9 +464,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+#why-us .btn-consultation {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0px 10px 0px!important;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
 #intro .intro-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #69caf0;
+  border: 2px solid #69caf0;
   color: #fff;
 }
 
@@ -1547,4 +1561,15 @@ section {
 
 #footer .credits a:hover {
   color: #f1f7ff;
+}
+
+.form-page h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: .75rem;
 }

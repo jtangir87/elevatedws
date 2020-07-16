@@ -14,7 +14,7 @@
         <h1 style="display:none;">Elevated Web Systems</h1>
         <h2>We provide<br><span>elevated</span> solutions<br>for your business!</h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="{% url 'consultation_form' %}" class="btn-get-started scrollto">Free Consultation</a>
           <a href="#services" class="btn-services scrollto">Our Services</a>
         </div>
       </div>
@@ -225,7 +225,9 @@
             <span data-toggle="counter-up">1,640,023</span>
             <p>Lines of Code</p>
           </div>
-
+            <div class="col-12 text-center">
+                <a href="{% url 'consultation_form' %}" class="btn-consultation">Schedule Your Free Consultation</a>
+            </div>
           {% comment %} <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">64</span>
             <p>Happy Customers</p>
@@ -303,16 +305,28 @@
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Event RSVP</a></h4>
+                <h4><a href="{% url 'port_mitzvahrsvp' %}">Event RSVP</a></h4>
                 <p>App</p>
                 <div>
                   <a href="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="{% url 'port_mitzvahrsvp' %}" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/catertogo.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="{% url 'port_catertogo' %}">Cater To Go</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="{% static 'img/portfolio/catertogo.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
+                  <a href="{% url 'port_catertogo' %}" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           {% comment %} <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">

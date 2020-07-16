@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}App Portfolio | Event RSVP Custom Web Application {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Event RSVP</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/mitzvahrsvp2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/mitzvahrsvp3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: App </li>
+              <li><strong>Client</strong>: Private Customer </li>
+              <li><strong>Project date</strong>: April 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://www.emmazuritskybatmitzvah.com" target="_blank">www.emmazuritskybatmitzvah.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Event RSVP</h1>
+          <p>
+            In the wake of the COVID-19 pandemic, Elevated Web Systems was tasked with building a custom event RSVP application. The concept was multi-part. First, we needed to secure the site so that only invited guests could log in and see the event information.
+            Our client did not have, nor did she want to, collect every invitees email address. We came up with a unique solution ... use the guests home street number and street name as their username and the password was a creative phrase that was the same for everyone. 
+          </p>
+          <p>
+            The next part was the invited guest pages. The landing page was all the event details (time, date, location, etc). Next we built out the RSVP page that preloaded all the family members who were invited, a message board system so the invitees can leave fun light-hearted messages
+            for the guest of honor, a photo gallery where invitees could share their favorite images of the guest of honor, and lastly the accomodation information for out of town guests. 
+          </p>
+          <p>
+            The last step was the Host Dashboard. This was the most challenging and advanced part of the project. From here, the Hostess and her Party Planner could invite families, track pending, received and declined RSVP's, monitor the amount of adults and children attending. The most useful feature
+            was the email system which could email blast all the attending guests if anything were to change. You may be thinking ... you just said the host didn't have their email address. We collected and stored that as a required field when they RSVP'd
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

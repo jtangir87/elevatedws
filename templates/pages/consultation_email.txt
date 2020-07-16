@@ -1,0 +1,7 @@
+New Consultation Request
+
+From: {{name}}
+Email: {{email}}
+Phone: {{phone}}
+
+Message: {{description}}
