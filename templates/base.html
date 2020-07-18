@@ -59,10 +59,10 @@
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
                 <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="{% url 'home' %}#about">About Us</a></li>
+                <li><a href="{% url 'home' %}#services">Services</a></li>
+                <li><a href="{% url 'home' %}#portfolio">Portfolio</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
                 <li class="nav-client-login"><a href="{% url 'login'%}">Client Login</a></li>
                 </ul>
       </nav><!-- .main-nav -->
@@ -112,10 +112,10 @@
             <h4>Useful Links</h4>
             <ul>
               <li><a href="{% url 'home' %}">Home</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="{% url 'home' %}#about">About us</a></li>
+              <li><a href="{% url 'home' %}#services">Services</a></li>
+              {% comment %} <li><a href="{% url 'home' %}">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li> {% endcomment %}
             </ul>
           </div>
 
