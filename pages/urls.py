@@ -19,4 +19,6 @@ urlpatterns = [
         template_name="pages/portfolio/mitzvahrsvp.html"), name="port_mitzvahrsvp"),
     path('portfolio/catertogo-e-commerce-platform', TemplateView.as_view(
         template_name="pages/portfolio/catertogo.html"), name="port_catertogo"),
+    path('portfolio/event-xtras', TemplateView.as_view(
+        template_name="pages/portfolio/eventxtras.html"), name="port_event_xtras"),
 ]

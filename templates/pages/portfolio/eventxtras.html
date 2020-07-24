@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}App Portfolio | Event RSVP Custom Web Application {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Event Xtras</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/eventxtras1.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/eventxtras2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/eventxtras3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web </li>
+              <li><strong>Client</strong>: Private Customer </li>
+              <li><strong>Project date</strong>: July 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://www.event-xtras.com" target="_blank">www.event-xtras.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Event Xtras</h1>
+          <p>
+            Event Xtras is a small business in the Philadelphia area that provides add on and enhancement services to the private event industry.
+          </p>
+          <p>
+            The goal for this project was to drive traffic to the website through SEO tools and also provide a clear and easy to navigate online catalogue. We worked together with the owner of the business to categorize and prioritze the offerings and create interesting content and pictures to attract attention. 
+          </p>
+          <p>
+            We also helping aquire 2 domains and automatically route the backup domain to main page incase of accidental mispellings as well as set up professional email accounts using the G Suite Business platform. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}
