@@ -21,4 +21,6 @@ urlpatterns = [
         template_name="pages/portfolio/catertogo.html"), name="port_catertogo"),
     path('portfolio/event-xtras', TemplateView.as_view(
         template_name="pages/portfolio/eventxtras.html"), name="port_event_xtras"),
+    path('portfolio/exterior-design-and-development', TemplateView.as_view(
+        template_name="pages/portfolio/exteriordd.html"), name="port_exteriordd"),
 ]

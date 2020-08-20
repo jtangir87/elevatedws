@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}Web Portfolio | Exterior Design & Development {% endblock title_tag %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Exterior Design & Development</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/exteriordd1.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/exteriordd2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/exteriordd3.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/exteriordd4.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website, Blog, Social Media Marketing</li>
+              <li><strong>Client</strong>: Exterior Design & Development</li>
+              <li><strong>Project date</strong>: August 2020</li>
+              <li><strong>Project URL</strong>: <a href="http://www.exteriordd.com" target="_blank">www.exteriordd.com</a></li>
+              <li><strong>Landing Page URL</strong>: <a href="http://www.exteriordd.com/residential" target="_blank">www.exteriordd.com/residential</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Exterior Design & Development</h1>
+          <p>
+            Exterior Design & Development partned with us to redesign and update an outdated Wordpress site, create and manage a blog to upgrade their SEO presence, and manage their social media 
+            accounts. We also built out a beautiful landing page designed to convert traffic and generate leads in the residential sector. With a guided click funnel and calls to action this landing page
+            is tailored to match their social media marketing goals.
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}
