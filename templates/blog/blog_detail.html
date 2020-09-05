@@ -1,0 +1,81 @@
+{% extends 'blog/blog_base.html' %}
+{% load static %}
+{% block meta_tags %}
+
+  <title>{{blog.title}}</title>
+  <meta content="{{blog.post|striptags|truncatechars:"160"}}" name="description">
+
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{blog.title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.elevatedwebsystems.com/blog/{{blog.slug}}" />
+  <meta property="og:image" content="http://www.elevatedwebsystems.com{{blog.header_img.url}}" />
+  <meta property="og:description" content="{{blog.post|striptags|truncatechars:"160"}}" />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+
+{% endblock meta_tags %}
+
+{% block headscript %}
+<style>
+{{blog.page_css|safe}}
+</style>
+{% endblock headscript %}
+
+
+{% block breadcrumb %}
+    <li><a href="{% url 'blog:blog_list' %}">Blog</a></li>
+    <li>{{blog.title}}</li>
+{% endblock breadcrumb %}
+
+{% block blog_content %}
+
+  <article class="entry entry-single" data-aos="fade-up">
+
+              <div class="entry-img">
+                <img src="{{blog.header_img.url}}" alt="" class="img-fluid">
+              </div>
+
+              <h1 class="entry-title">
+                {{blog.title}}
+              </h1>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">{{blog.created_at}}</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                {{blog.post|safe}}
+
+              </div>
+
+              <div class="entry-footer clearfix">
+                <div class="float-left">
+                  <i class="icofont-folder"></i>
+                  <ul class="cats">
+                    {% for cat in blog.categories.all %}
+                        <li><a href="#">{{cat.name}}</a> | </li>
+                    {% endfor %}
+                  </ul>
+
+                </div>
+
+                <div class="float-right share">
+                  <a href="https://twitter.com/home?status={{full_url}}" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{full_url}}" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+
+                </div>
+
+              </div>
+
+            </article><!-- End blog entry -->
+{% endblock blog_content %}
+
+
+{% block footscript %}
+<script>
+{{blog.page_js|safe}}
+</script>
+{% endblock footscript %}

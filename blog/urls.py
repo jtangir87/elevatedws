@@ -1,4 +1,4 @@
-"""elevatedws URL Configuration
+"""blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -13,20 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
-from django.contrib.auth import views as auth_views
 
-from django.conf import settings
-from django.conf.urls.static import static
+from django.urls import path
+from .views import BlogList, blog_detail, blog_list, filtered_blog_list
+
+app_name = "blog"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("", include("pages.urls")),
-    path("blog/", include("blog.urls")),
-    path(
-        "login/",
-        auth_views.LoginView.as_view(template_name="login.html"),
-        name="login",
-    ),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("", blog_list, name="blog_list"),
+    path("<slug:slug>", blog_detail, name="blog_detail"),
+    path("categories/<slug:slug>", filtered_blog_list, name="filtered_blog_list"),
+]
+
