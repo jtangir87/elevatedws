@@ -20,8 +20,17 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.contrib.sitemaps.views import sitemap
+from pages.sitemaps import StaticViewSitemap
+from blog.sitemaps import BlogPostSitemap
+sitemaps = {
+    'static': StaticViewSitemap,
+    'blog_posts': BlogPostSitemap
+}
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('cms/', admin.site.urls),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name="sitemap"),
     path("", include("pages.urls")),
     path("blog/", include("blog.urls")),
     path(

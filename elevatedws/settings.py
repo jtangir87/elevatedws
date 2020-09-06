@@ -142,8 +142,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent-emails')
 
 TINYMCE_DEFAULT_CONFIG = {
-    "plugins": "table,spellchecker,paste,searchreplace,code,preview,image,lists,media",
-    "toolbar": "numlist bullist image hr forecolor backcolor",
+    "plugins": "table,spellchecker,paste,searchreplace,code,preview,image,lists,media,link",
+    "toolbar": "numlist bullist image hr forecolor backcolor link",
 }
 
 

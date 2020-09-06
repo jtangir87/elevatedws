@@ -2,15 +2,8 @@ from django.urls import path
 from django.views.generic import TemplateView
 from .views import contact_us, consultation_form
 
-from django.contrib.sitemaps.views import sitemap
-from pages.sitemaps import StaticViewSitemap
-sitemaps = {
-    'static': StaticViewSitemap
-}
-
 urlpatterns = [
     path('', TemplateView.as_view(template_name="pages/home.html"), name="home"),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path('contact', contact_us, name="contact_us"),
     path('consultation-request', consultation_form, name="consultation_form"),
 
