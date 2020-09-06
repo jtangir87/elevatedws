@@ -33,7 +33,7 @@ class BlogPost(models.Model):
     categories = models.ManyToManyField(BlogCategory)
     page_css = models.TextField(blank=True, null=True)
     header_img = models.ImageField(upload_to=blog_uploads)
-    slug = AutoSlugField(populate_from="title")
+    slug = models.SlugField()
     post = HTMLField()
     page_js = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
