@@ -2,7 +2,16 @@
 {% load static %}
 {% load bootstrap4 %}
 
-{% block title_tag %}Free Consultation {% endblock title_tag %}
+{% block title_tag %}Elevated Web Systems | Free Consultation{% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="Elevating business growth through web design and development, customized solutions, and social media marketing, management and advertising" name="description">
+  <meta content="" name="keywords">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.elevatedwebsystems.com/consultation-request" />
+	<meta property="og:title" content="Elevated Web Systems" />
+	<meta property="og:description" content="Elevating business growth through web design and development, customized solutions, and social media marketing, management and advertising" />
+  <meta property="og:image" content="{% static 'img/elevatedws-og-img.png' %}" />
+{% endblock meta_tags %}
 {% block content %}
 {{ form.media }}
   <main id="main">

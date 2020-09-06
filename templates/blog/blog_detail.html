@@ -1,8 +1,7 @@
 {% extends 'blog/blog_base.html' %}
 {% load static %}
+{% block title_tag %}{{blog.title}} {% endblock title_tag %}
 {% block meta_tags %}
-
-  <title>{{blog.title}}</title>
   <meta content="{{blog.post|striptags|truncatechars:"160"}}" name="description">
 
 

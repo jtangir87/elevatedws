@@ -1,6 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title_tag %}App Portfolio | Event Dispatch Staff Scheduling App{% endblock title_tag %}
+
+{% block title_tag %}App Portfolio | Event Dispatch Staff Scheduling App {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="designed for the mobile event industry to meet specific needs for employee scheduling" name="description">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="App Portfolio | Event Dispatch Staff Scheduling App" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{% url 'port_event_dispatch' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/event-dispatch.png' %}" />
+  <meta property="og:description" content="designed for the mobile event industry to meet specific needs for employee scheduling" />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
 {% block content %}
 
   <main id="main">

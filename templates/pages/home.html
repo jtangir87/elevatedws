@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title_tag %}Web Systems & Solutions for Your Business{% endblock title_tag %}
+{% block title_tag %}Elevated Web Systems | Digital Solutions for Business Growth{% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="Elevating business growth through web design and development, customized solutions, and social media marketing, management and advertising" name="description">
+  <meta content="" name="keywords">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.elevatedwebsystems.com" />
+	<meta property="og:title" content="Elevated Web Systems" />
+	<meta property="og:description" content="Elevating business growth through web design and development, customized solutions, and social media marketing, management and advertising" />
+  <meta property="og:image" content="{% static 'img/elevatedws-og-img.png' %}" />
+{% endblock meta_tags %}
 {% block content %}
   <!-- ======= Intro Section ======= -->
   <section id="intro" class="clearfix">

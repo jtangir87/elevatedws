@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block title_tag %}App Portfolio | Cater To Go | E-Commerce Site {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="online ordering platform that allowed the vendor to have complete control of their menu, categories, wording, and site-design." name="description">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="App Portfolio | Cater To Go | E-Commerce Site" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{% url 'port_catertogo' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/catertogo.png' %}" />
+  <meta property="og:description" content="online ordering platform that allowed the vendor to have complete control of their menu, categories, wording, and site-design." />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
 {% block content %}
 
   <main id="main">

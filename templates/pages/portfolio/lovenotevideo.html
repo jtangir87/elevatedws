@@ -1,6 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title_tag %}App Portfolio | Advanced Content Creation | Love Note Video Interactive Video Creator {% endblock title_tag %}
+
+{% block title_tag %}App Portfolio | Advanced Content Creation | Love Note Video Interactive Video Creator  {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="This was a fun and unique 2-part project. Part 1 was the user facing landing page and interactive dashboards. The development process included creating an event (called a Love Note), generating
+            shareable links" name="description">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="App Portfolio | Advanced Content Creation | Love Note Video Interactive Video Creator " />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{% url 'port_lovenotevideo' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/lnv.png' %}" />
+  <meta property="og:description" content="This was a fun and unique 2-part project. Part 1 was the user facing landing page and interactive dashboards. The development process included creating an event (called a Love Note), generating
+            shareable links" />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
+
 {% block content %}
 
   <main id="main">

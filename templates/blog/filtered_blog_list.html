@@ -13,6 +13,23 @@
 </style>
 {% endblock headscript %}
 
+{% block title_tag %}Elevated Web Systems | Blog | {{category.name}}{% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="blog" name="description">
+
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Elevated Web Systems | Blog | {{category.name}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.elevatedwebsystems.com/blog/{{category.slug}}" />
+  <meta property="og:image" content="{% static 'img/blog-og-img.png' %}" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+
+{% endblock meta_tags %}
+
+
+
 {% block breadcrumb %}
     <li><a href="{% url 'blog:blog_list' %}">Blog</a></li>
     <li>{{category.name}}</li>
