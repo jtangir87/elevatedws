@@ -6,6 +6,8 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path('contact', contact_us, name="contact_us"),
     path('consultation-request', consultation_form, name="consultation_form"),
+    path('client-connect', TemplateView.as_view(
+        template_name="pages/sendible_client_connect.html"), name="client_connect"),
 
 
     ## PORTFOLIO DETAILS ##
