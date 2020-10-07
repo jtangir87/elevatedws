@@ -4,11 +4,11 @@
 {% block title_tag %}App Portfolio | Event RSVP Custom Web Application  {% endblock title_tag %}
 {% block meta_tags %}
   <meta content="In the wake of the COVID-19 pandemic, Elevated Web Systems was tasked with building a custom event RSVP application." name="description">
-  <link rel="canonical" href="https://elevatedwebsystems.com/{% url 'port_mitzvahrsvp' %}" />
+  <link rel="canonical" href="https://elevatedwebsystems.com{% url 'port_mitzvahrsvp' %}" />
   <!-- Open Graph data -->
   <meta property="og:title" content="App Portfolio | Event RSVP Custom Web Application " />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://elevatedwebsystems.com/{% url 'port_mitzvahrsvp' %}" />
+  <meta property="og:url" content="https://elevatedwebsystems.com{% url 'port_mitzvahrsvp' %}" />
   <meta property="og:image" content="{% static 'img/portfolio/mitzvahrsvp.png' %}" />
   <meta property="og:description" content="In the wake of the COVID-19 pandemic, Elevated Web Systems was tasked with building a custom event RSVP application." />
   <meta property="og:site_name" content="Elevated Web Systems" />

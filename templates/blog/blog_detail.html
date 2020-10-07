@@ -3,13 +3,13 @@
 {% block title_tag %}{{blog.title}} {% endblock title_tag %}
 {% block meta_tags %}
   <meta content="{{blog.post|striptags|truncatechars:"160"}}" name="description">
-
+  <link rel="canonical" href="https://elevatedwebsystems.com/blog/{{blog.slug}}" />
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{blog.title}}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://www.elevatedwebsystems.com/blog/{{blog.slug}}" />
-  <meta property="og:image" content="http://www.elevatedwebsystems.com{{blog.header_img.url}}" />
+  <meta property="og:url" content="https://elevatedwebsystems.com/blog/{{blog.slug}}" />
+  <meta property="og:image" content="https://elevatedwebsystems.com{{blog.header_img.url}}" />
   <meta property="og:description" content="{{blog.post|striptags|truncatechars:"160"}}" />
   <meta property="og:site_name" content="Elevated Web Systems" />
 
@@ -41,7 +41,7 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">{{blog.updated_at}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href=""><time datetime="2020-01-01">{{blog.updated_at}}</time></a></li>
                 </ul>
               </div>
 

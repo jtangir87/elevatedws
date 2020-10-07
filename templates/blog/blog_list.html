@@ -17,11 +17,11 @@
 {% block meta_tags %}
   <meta content="blog" name="description">
 
-
+  <link rel="canonical" href="https://elevatedwebsystems.com/blog" />
   <!-- Open Graph data -->
   <meta property="og:title" content="Elevated Web Systems | Blog" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://www.elevatedwebsystems.com/blog" />
+  <meta property="og:url" content="https://elevatedwebsystems.com/blog" />
   <meta property="og:image" content="{% static 'img/blog-og-img.png' %}" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Elevated Web Systems" />
@@ -50,7 +50,6 @@
               <div class="entry-meta">
                 <ul>
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="{% url 'blog:blog_detail' slug=blog.slug %}"><time datetime="2020-01-01">{{blog.created_at}}</time></a></li>
-                  {% comment %} <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Comments</a></li> {% endcomment %}
                 </ul>
               </div>
 
