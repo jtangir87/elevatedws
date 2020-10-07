@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from django.views.generic import TemplateView
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -31,6 +32,11 @@ sitemaps = {
 urlpatterns = [
     path('cms/', admin.site.urls),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name="sitemap"),
+    path(
+        "robots.txt",
+        TemplateView.as_view(template_name="robots.txt",
+                             content_type="text/plain"),
+    ),
     path("", include("pages.urls")),
     path("blog/", include("blog.urls")),
     path(
