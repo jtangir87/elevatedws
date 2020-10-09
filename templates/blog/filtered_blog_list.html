@@ -16,12 +16,12 @@
 {% block title_tag %}Elevated Web Systems | Blog | {{category.name}}{% endblock title_tag %}
 {% block meta_tags %}
   <meta content="blog" name="description">
-  <link rel="canonical" href="https://elevatedwebsystems.com/blog/{{category.slug}}" />
+  <link rel="canonical" href="https://elevatedwebsystems.com/blog/categories/{{category.slug}}" />
 
   <!-- Open Graph data -->
   <meta property="og:title" content="Elevated Web Systems | Blog | {{category.name}}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://elevatedwebsystems.com/blog/{{category.slug}}" />
+  <meta property="og:url" content="https://elevatedwebsystems.com/blog/categories/{{category.slug}}" />
   <meta property="og:image" content="{% static 'img/blog-og-img.png' %}" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Elevated Web Systems" />
