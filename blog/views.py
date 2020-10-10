@@ -32,28 +32,28 @@ def blog_list(request):
     return render(request, "blog/blog_list.html", context)
 
 
-class BlogList(ListView):
-    model = BlogPost
-    template_name = "blog/blog_list.html"
+def pending_blog_list(request):
+    blog_list = BlogPost.objects.filter(published=False)
+    page = request.GET.get("page", 1)
+    sidebar_blogs = BlogPost.objects.filter(published=True)[:5]
+    categories = BlogCategory.objects.all()
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["blogs"] = BlogPost.objects.filter(published=True)
-        context["sidebar_blogs"] = BlogPost.objects.filter(published=True)[:5]
-        context["categories"] = BlogCategory.objects.all()
-        return context
+    paginator = Paginator(blog_list, 10)
 
+    try:
+        blogs = paginator.page(page)
+    except PageNotAnInteger:
+        blogs = paginator.page(1)
+    except EmptyPage:
+        blogs = paginator.page(paginator.num_pages)
 
-class PendingBlogList(ListView):
-    model = BlogPost
-    template_name = "blog/blog_list.html"
+    context = {
+        "blogs": blogs,
+        "sidebar_blogs": sidebar_blogs,
+        "categories": categories,
+    }
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["blogs"] = BlogPost.objects.filter(published=False)
-        context["sidebar_blogs"] = BlogPost.objects.filter(published=True)[:5]
-        context["categories"] = BlogCategory.objects.all()
-        return context
+    return render(request, "blog/blog_list.html", context)
 
 
 def filtered_blog_list(request, slug):
