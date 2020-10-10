@@ -15,13 +15,13 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import BlogList, blog_detail, blog_list, filtered_blog_list
+from .views import BlogList, blog_detail, blog_list, filtered_blog_list, PendingBlogList
 
 app_name = "blog"
 
 urlpatterns = [
     path("", blog_list, name="blog_list"),
+    path("pending", PendingBlogList.as_view(), name="pending_blog_list"),
     path("<slug:slug>", blog_detail, name="blog_detail"),
     path("categories/<slug:slug>", filtered_blog_list, name="filtered_blog_list"),
 ]
-

@@ -44,6 +44,18 @@ class BlogList(ListView):
         return context
 
 
+class PendingBlogList(ListView):
+    model = BlogPost
+    template_name = "blog/blog_list.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["blogs"] = BlogPost.objects.filter(published=False)
+        context["sidebar_blogs"] = BlogPost.objects.filter(published=True)[:5]
+        context["categories"] = BlogCategory.objects.all()
+        return context
+
+
 def filtered_blog_list(request, slug):
     category = get_object_or_404(BlogCategory, slug=slug)
     blog_list = BlogPost.objects.filter(categories=category, published=True)
