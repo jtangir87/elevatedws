@@ -249,156 +249,10 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="clearfix">
-      <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h3 class="section-title">Portfolio</h3>
-        </header>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-ecom">E-Commerce</li> 
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-blog">Blog</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-blog">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/exteriordd-thumb.png' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4 style="font-size:20px"><a href="{% url 'port_exteriordd' %}">Exterior Design & Development</a></h4>
-                <p>Web, Blog</p>
-                <div>
-                  <a href="{% static 'img/portfolio/exteriordd1.png' %}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_exteriordd' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/event-dispatch.png' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_event_dispatch' %}">Event Dispatch</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="{% static 'img/portfolio/event-dispatch.png' %}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_event_dispatch' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/eventxtras-thumb.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_event_xtras' %}">Event Xtras</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="{% static 'img/portfolio/eventxtras1.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 3"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_event_xtras' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/ggrc.webp' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_ggrc' %}">GGR Cleaners</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="{% static 'img/portfolio/ggrc.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 3"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_ggrc' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/lnv.webp' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_lovenotevideo' %}">Love Note Video</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="{% static 'img/portfolio/lnv.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="App 2"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_lovenotevideo' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/mitzvahrsvp-thumb.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_mitzvahrsvp' %}">Event RSVP</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_mitzvahrsvp' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-ecom">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/catertogo.webp' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% url 'port_catertogo' %}">Cater To Go</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="{% static 'img/portfolio/catertogo.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="far fa-eye"></i></a>
-                  <a href="{% url 'port_catertogo' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {% comment %} <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="assets/img/portfolio/app3.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="App 3"><i class="far fa-eye"></i></a>
-                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/web1.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Web 1"><i class="far fa-eye"></i></a>
-                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> {% endcomment %}
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
+    {% include 'pages/includes/partial_portfolio_list.html' %}
+    
+    <!-- End Portfolio Section -->
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="section-bg">
       <div class="container" data-aso="zoom-in">
@@ -641,11 +495,11 @@
           <div class="col-lg-6 mx-auto">
             <div class="row">
               <div class="col-md-6 info" style="align-items:right;">
-                <i class="ion-ios-email-outline"></i>
+                <i class="far fa-envelope"></i>
                 <p><a href="mailto:info@elevatedwebsystems.com" style="color:black;">info@elevatedwebsystems.com</a></p>
               </div>
               <div class="col-md-6 info">
-                <i class="ion-ios-telephone-outline"></i>
+                <i class="fas fa-phone-alt"></i>
                 <p><a href="tel:+12673344782" style="color:black;">(267) 334-4782</a></p>
               </div>
             </div>
