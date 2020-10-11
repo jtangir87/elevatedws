@@ -1094,7 +1094,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: white;
   margin-left: 140px;
 }
 
@@ -1108,6 +1108,7 @@ section {
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 140px;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -1578,4 +1579,27 @@ section {
 .forgot-password {
   margin-top: 10px;
   font-size: .75rem;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+@media (min-width: 501px) {
+  .parallax {
+      height: auto;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+}
+
+.testi-overlay {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
