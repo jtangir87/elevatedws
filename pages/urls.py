@@ -25,4 +25,11 @@ urlpatterns = [
         template_name="pages/portfolio/eventxtras.html"), name="port_event_xtras"),
     path('portfolio/exterior-design-and-development', TemplateView.as_view(
         template_name="pages/portfolio/exteriordd.html"), name="port_exteriordd"),
+
+
+    ## LOCAL LANDING PAGES ##
+    path('doylestown-website-design', TemplateView.as_view(
+        template_name="pages/local/doylestown.html"), name="local_doylestown"),
+
+
 ]
