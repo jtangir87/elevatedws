@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_tag %}Web Portfolio | Southeastern Pennsylvania Cold War Historical Society  {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="The SE PA Cold War Historical Society needed a complete website update and redesign to make a new responsive mobile-friendly layout outlining their initiatives, projects, and an e-commerce donate button " name="description">
+  <link rel="canonical" href="https://elevatedwebsystems.com{% url 'port_sepacoldwar' %}" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Web Portfolio | Southeastern Pennsylvania Cold War Historical Society " />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://elevatedwebsystems.com{% url 'port_sepacoldwar' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/ggrc.png' %}" />
+  <meta property="og:description" content="The SE PA Cold War Historical Society needed a complete website update and redesign to make a new responsive mobile-friendly layout outlining their initiatives, projects, and an e-commerce donate button  " />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>SE PA Cold War Historical Society</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/sepa-coldwar-main.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/sepa-coldwar-photo-archive.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/sepa-coldwar-donate.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/sepa-coldwar-events.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website</li>
+              <li><strong>Client</strong>: <a href="https://coldwarhistory.org">Southeastern PA Cold War Historical Society</a></li>
+              <li><strong>Project Date</strong>: September 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://coldwarhistory.org">www.coldwarhistory.org</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Southeastern PA Cold War Historical Society</h1>
+          <p>
+            The Southeastern Pennsylvania Cold War Historical Society trusted us with a full redesign of their existing website. The existing site was designed by a friend of 
+            the organization when it was started and worked functionally for a long time while they didn't have the budget to build a more develop a more elaborate website. 
+          </p>
+          <p>
+            The project started as a simple website update taking the existing content and copy and creating a new mobile-friendly and responsive single page web design. 
+            From the beginning, we planned to include a donate button powered by Stripe with a discounted rate for non-profits. 
+          </p>
+          <p>
+            Overall, the goal was to make the new website a hub for events and information surrounding the SE PA Cold War Historical Society, outlining their initiatives and projects in detail.
+          </p>
+          <p>
+            About one week into the build, the client came up with some great ideas to include a photo archive of old photos she had from the Naval Air Development Center. We built in a commenting feature so veterans could leave notes 
+            about their memories and give first-hand accounts of the images. These memories and accounts are now preserved in a database for many more generations to come! 
+          </p>
+          <p>
+            Like most non-profits, monthly expenses were a concern, we worked together to build a simple CMS (Content Management System) backend where the client could change and update descriptions 
+            on different pages, add new events, update the photo archive, and approve new photo comments/tags. 
+          </p>
+          <p>The project took about a week longer than expected with the design changes but it was worth it because the final product came out great!
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

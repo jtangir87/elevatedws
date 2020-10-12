@@ -13,7 +13,7 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-ecom">E-Commerce</li> 
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-web">Website</li>
               <li data-filter=".filter-blog">Blog</li>
             </ul>
           </div>
@@ -23,12 +23,26 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-blog">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/exteriordd-thumb.png' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/sepa-coldwar-main.jpg' %}" class="img-fluid" alt="SE PA cold war historical society website design screenshot">
+              <div class="portfolio-info">
+                <h4 style="font-size:18px"><a href="{% url 'port_sepacoldwar' %}">SE PA Cold War Historical Society</a></h4>
+                <p>Website</p>
+                <div>
+                  <a href="{% static 'img/portfolio/sepa-coldwar-main.jpg' %}" data-gall="portfolioGallery" title="SE PA Cold War Historical Society Website Design" class="venobox link-preview"><i class="far fa-eye"></i></a>
+                  <a href="{% url 'port_sepacoldwar' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-blog">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/exteriordd-thumb.png' %}" class="img-fluid" alt="exterior design and development website design screenshot">
               <div class="portfolio-info">
                 <h4 style="font-size:20px"><a href="{% url 'port_exteriordd' %}">Exterior Design & Development</a></h4>
-                <p>Web, Blog</p>
+                <p>Website, Blog</p>
                 <div>
-                  <a href="{% static 'img/portfolio/exteriordd1.png' %}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/exteriordd1.png' %}" data-gall="portfolioGallery" title="Exterior Design and Development Website Development" class="venobox link-preview"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_exteriordd' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -37,12 +51,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/event-dispatch.png' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/event-dispatch.png' %}" class="img-fluid" alt="event dispatch app web development screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_event_dispatch' %}">Event Dispatch</a></h4>
                 <p>App</p>
                 <div>
-                  <a href="{% static 'img/portfolio/event-dispatch.png' %}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/event-dispatch.png' %}" data-gall="portfolioGallery" title="Event Dispatch Web Application" class="venobox link-preview"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_event_dispatch' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -51,12 +65,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/eventxtras-thumb.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/eventxtras-thumb.jpg' %}" class="img-fluid" alt="event xtras website design screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_event_xtras' %}">Event Xtras</a></h4>
-                <p>Web</p>
+                <p>Website</p>
                 <div>
-                  <a href="{% static 'img/portfolio/eventxtras1.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 3"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/eventxtras1.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Event Xtras Website Design"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_event_xtras' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -65,12 +79,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/ggrc.webp' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/ggrc.webp' %}" class="img-fluid" alt="ggr cleaners website design screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_ggrc' %}">GGR Cleaners</a></h4>
-                <p>Web</p>
+                <p>Website</p>
                 <div>
-                  <a href="{% static 'img/portfolio/ggrc.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 3"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/ggrc.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Global Garment and Restoration Cleaners Website Design"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_ggrc' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -79,12 +93,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/lnv.webp' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/lnv.webp' %}" class="img-fluid" alt="love note video interactive video web application screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_lovenotevideo' %}">Love Note Video</a></h4>
                 <p>App</p>
                 <div>
-                  <a href="{% static 'img/portfolio/lnv.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="App 2"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/lnv.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Love Note Video Website Design"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_lovenotevideo' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -93,12 +107,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/mitzvahrsvp-thumb.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/mitzvahrsvp-thumb.jpg' %}" class="img-fluid" alt="event RSVP web application screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_mitzvahrsvp' %}">Event RSVP</a></h4>
                 <p>App</p>
                 <div>
-                  <a href="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/mitzvahrsvp.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Event RSVP Web Application"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_mitzvahrsvp' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
@@ -106,44 +120,17 @@
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-ecom">
             <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/catertogo.webp' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/portfolio/catertogo.webp' %}" class="img-fluid" alt="cater to go e-commerce website development screenshot">
               <div class="portfolio-info">
                 <h4><a href="{% url 'port_catertogo' %}">Cater To Go</a></h4>
                 <p>App</p>
                 <div>
-                  <a href="{% static 'img/portfolio/catertogo.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="far fa-eye"></i></a>
+                  <a href="{% static 'img/portfolio/catertogo.png' %}" class="venobox link-preview" data-gall="portfolioGallery" title="Cater To Go E-Commerce Website Development"><i class="far fa-eye"></i></a>
                   <a href="{% url 'port_catertogo' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          {% comment %} <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="assets/img/portfolio/app3.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="App 3"><i class="far fa-eye"></i></a>
-                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/web1.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Web 1"><i class="far fa-eye"></i></a>
-                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> {% endcomment %}
 
         </div>
 
