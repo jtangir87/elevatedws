@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_tag %}Web Portfolio | Infinity Caterers  {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="Infinity Caterers needed a complete website design up to develop a modern mobile-friendly responsive design. The focus of the website development was a clean professional interface that would drive visitors to fill out the contact form " name="description">
+  <link rel="canonical" href="https://elevatedwebsystems.com{% url 'port_infinity_caterers' %}" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Web Portfolio | Infinity Caterers " />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://elevatedwebsystems.com{% url 'port_infinity_caterers' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/inifity-caterers-main.jpg' %}" />
+  <meta property="og:description" content="Infinity Caterers needed a complete website design up to develop a modern mobile-friendly responsive design. The focus of the website development was a clean professional interface that would drive visitors to fill out the contact form  " />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Infinity Caterers</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/infinity-caterers-main.jpg' %}" class="img-fluid" alt="infinity caterers landing page screenshot">
+            <img src="{% static 'img/portfolio/infinity-caterers-testimonials.jpg' %}" class="img-fluid" alt="infinity caterers testimonial section screenshot">
+            <img src="{% static 'img/portfolio/infinity-caterers-call-to-action.jpg' %}" class="img-fluid" alt="infinity caterers call to action screenshot">
+            <img src="{% static 'img/portfolio/infinity-caterers-sample-menu.jpg' %}" class="img-fluid" alt="infinity caterers sample menu screenshot">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website Design</li>
+              <li><strong>Client</strong>: <a href="https://infinitycaterers.com">Infinty Caterers</a></li>
+              <li><strong>Project Date</strong>: September 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://infinitycaterers.com">www.infinitycaterers.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Infinity Caterers : Website Design</h1>
+          <p>
+            Infinity Caterers is an established premier catering company servicing the Philadelphia area and South Jersey. When they came to us, they had a website that hadn't been touched since 2009 - 
+            possibly earlier! It was still running Flash which doesn't event render in today's web browsers. All of this was crushing their SEO ranking potential. Google would never rank a page 
+            that isn't mobile-friendly and especially not one that won't render on a desktop!
+          </p>
+          <p>
+            This wasn't their fault, they were focusing on growing a successful customer first catering business and, like most busy business owners, the website kept getting pushed 
+            down on their list of priorities. 
+          </p>
+          <p>
+            Unfortunately, they had hired another developer two years ago that wasn't able to complete the project. This is where Elevated Web Systems stepped in. We were able to put together a 
+            professional website design that showcased their quality and core business model of focusing on customer service. 
+          </p>
+          <p>
+            About one week into the build, the client came up with some great ideas to include a photo archive of old photos she had from the Naval Air Development Center. We built in a commenting feature so veterans could leave notes 
+            about their memories and give first-hand accounts of the images. These memories and accounts are now preserved in a database for many more generations to come! 
+          </p>
+          <p>
+            Working together with the owners, we helped revamp their menus and display them in an easy to read and mobile-friendly way. Since this was not an e-commerce website, the goal was to give visitors enough motivation to fill out 
+            the estimate form or make a phone call. Our focus was to generate the qualified lead so their customer service team could close the sale. 
+          </p>
+          <p>With a clean interface, easy to navigate menu bar, responsive design, and social proof testimonials section we were able to elevate Infinity Caterers' website back into 2020!
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

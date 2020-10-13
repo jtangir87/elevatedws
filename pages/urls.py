@@ -25,9 +25,10 @@ urlpatterns = [
         template_name="pages/portfolio/eventxtras.html"), name="port_event_xtras"),
     path('portfolio/exterior-design-and-development', TemplateView.as_view(
         template_name="pages/portfolio/exteriordd.html"), name="port_exteriordd"),
-    path('portfolio/sepa-cold-war-historical-society', TemplateView.as_view(
+    path('portfolio/sepa-cold-war-historical-society-website-design', TemplateView.as_view(
         template_name="pages/portfolio/sepacoldwar.html"), name="port_sepacoldwar"),
-
+    path('portfolio/infinity-caterers-website-design', TemplateView.as_view(
+        template_name="pages/portfolio/infinity_caterers.html"), name="port_infinity_caterers"),
 
     ## LOCAL LANDING PAGES ##
     path('doylestown-website-design', TemplateView.as_view(
