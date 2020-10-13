@@ -15,6 +15,7 @@ class StaticViewSitemap(Sitemap):
                 'port_exteriordd',
                 'port_sepacoldwar',
                 'port_infinity_caterers',
+                'port_tasty_table',
                 'local_doylestown'
                 ]
 
