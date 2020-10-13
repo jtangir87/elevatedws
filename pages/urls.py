@@ -29,6 +29,9 @@ urlpatterns = [
         template_name="pages/portfolio/sepacoldwar.html"), name="port_sepacoldwar"),
     path('portfolio/infinity-caterers-website-design', TemplateView.as_view(
         template_name="pages/portfolio/infinity_caterers.html"), name="port_infinity_caterers"),
+    path('portfolio/tasty-table-market-website-design', TemplateView.as_view(
+        template_name="pages/portfolio/tasty_table.html"), name="port_tasty_table"),
+
 
     ## LOCAL LANDING PAGES ##
     path('doylestown-website-design', TemplateView.as_view(

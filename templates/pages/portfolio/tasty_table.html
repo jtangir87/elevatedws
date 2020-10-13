@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_tag %}Website Design Portfolio | Tasty Table Market  {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="Tasty Table Catering was hit hard by the COVID-19 outbreak. They needed a new website designed and developed fast after they decided to pivot their business model" name="description">
+  <link rel="canonical" href="https://elevatedwebsystems.com{% url 'port_tasty_table' %}" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Website Design Portfolio | Tasty Table Market" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://elevatedwebsystems.com{% url 'port_tasty_table' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/inifity-caterers-main.jpg' %}" />
+  <meta property="og:description" content="Tasty Table Catering was hit hard by the COVID-19 outbreak. They needed a new website designed and developed fast after they decided to pivot their business model " />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Tasty Table Market</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/tasty-table-main.jpg' %}" class="img-fluid" alt="tasty table market landing page screenshot">
+            <img src="{% static 'img/portfolio/tasty-table-menu.jpg' %}" class="img-fluid" alt="tasty table menu screenshot">
+            <img src="{% static 'img/portfolio/tasty-table-contact.jpg' %}" class="img-fluid" alt="tasty table market screenshot">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website Design</li>
+              <li><strong>Client</strong>: Tasty Table Catering</li>
+              <li><strong>Project Date</strong>: August 2020</li>
+              <li><strong>Project URL</strong>: <a href="https://tastytablemarket.com">www.tastytablemarket.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Tasty Table Market : Website Design</h1>
+          <p>
+            Tasty Table Market was hit hard by the COVID-19 pandemic. They were a successful corporate catering business serving meals by the hundred to large companies and office buildings. 
+          </p>
+          <p>
+            Shortly after the event industry shut down, the owner converted some of his commercial kitchen space into a specialty market. His existing website <a href="https://www.tastytablecatering.com/">www.tastytablecatering.com</a> didn't 
+            fit the goals and clearly describe his new pivoted venture. 
+          </p>
+          <p>
+            We designed and developed a single page landing page geared toward converting social media traffic. Our goal was simple, cleanly display the new services, unique menu, and daily specials. 
+          </p>
+          <p>
+            In one week we had this new website live and being visited by members of the surrounding community. The targeting goal was people who lived within a ten-mile radius surrounding their Berwyn location. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}
