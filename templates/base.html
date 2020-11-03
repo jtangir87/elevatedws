@@ -76,7 +76,8 @@
                 <li><a href="{% url 'home' %}#portfolio">Portfolio</a></li>
                 <li {% if '/blog' in request.path %}class="active"{% endif %}><a href="{% url 'blog:blog_list' %}">Blog</a></li>
                 <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
-                <li class="nav-client-login"><a href="{% url 'login'%}">Client Login</a></li>
+                <li {% if request.resolver_match.view_name == 'website_audit' %}class="active"{% endif %}><a href="{% url 'website_audit' %}" class="btn nav-button">Free Website Audit</a></li>
+                {% comment %} <li class="nav-client-login"><a href="{% url 'login'%}">Client Login</a></li> {% endcomment %}
                 </ul>
       </nav><!-- .main-nav -->
       </div>

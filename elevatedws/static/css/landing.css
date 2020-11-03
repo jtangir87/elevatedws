@@ -1,0 +1,167 @@
+#landing-intro {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url("../img/landing-bg.png") center bottom no-repeat;
+    background-size: cover;
+    padding: 200px 0 120px 0;
+  }
+  
+  @media (max-width: 991px) {
+    #landing-intro {
+      padding: 140px 0 60px 0;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    #landing-intro {
+      padding: 100px 0 20px 0;
+    }
+  }
+
+  #landing-intro .intro-info ul {
+    color: white;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+
+
+  #landing-intro .intro-img {
+    width: 40%;
+    float: right;
+  }
+
+
+  #landing-intro .intro-img img {
+    max-height: 60vh;
+  }
+  
+  @media (max-width: 991px) {
+    #landing-intro .intro-img {
+      width: 80%;
+      float: none;
+      margin: 0 auto 25px auto;
+    }
+  }
+  
+  #landing-intro .intro-info {
+    width: 50%;
+    float: left;
+  }
+  
+  @media (max-width: 991px) {
+    #landing-intro .intro-info {
+      width: 80%;
+      float: none;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #landing-intro .intro-info {
+      width: 100%;
+    }
+  }
+  
+  #landing-intro .intro-info h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-weight: 700;
+  }
+  
+  #landing-intro .intro-info h1 span {
+    color: #69caf0;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 767px) {
+    #landing-intro .intro-info h1 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  #landing-intro .intro-info .btn-get-started, #landing-intro .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 20px 20px 0;
+    color: #fff;
+  }
+  
+  #why-us .btn-consultation {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 20px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0px 10px 0px!important;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  #landing-intro .intro-info .btn-get-started {
+    background: #69caf0;
+    border: 2px solid #69caf0;
+    color: #fff;
+  }
+  
+  #landing-intro .intro-info .btn-get-started:hover {
+    background: none;
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  #landing-intro .intro-info .btn-services {
+    border: 2px solid #fff;
+  }
+  
+  #landing-intro .intro-info .btn-services:hover {
+    background: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+
+
+#so-form {
+    margin: 10px!important;
+}
+#so-fieldswrapso1604362999 {
+    margin: 0 auto;
+    width: 300px!important;
+}
+.so-fieldso1604362999 {
+    background-color: #FFFFFF!important;
+    border: 1px solid #e3e3e3!important;
+    border-radius: 4px!important;
+    color: #565656!important;
+    padding: 7px 12px!important;
+    font-size: 18px!important;
+    height: 45px!important; 
+width: 100%!important; 
+display: block!important; 
+margin-top: 5px!important;
+}
+#so-submitso1604362999 {
+    background-color: #6acaf0!important;
+    border: 1px solid #6acaf0!important;
+    color: #ffffff!important;
+    border-radius: 3px!important;
+    text-decoration: none!important;
+    cursor: pointer!important;
+    font-size: 19px!important; 
+display: block!important; 
+padding: 8px 50px!important; 
+margin: 5px auto!important;
+}

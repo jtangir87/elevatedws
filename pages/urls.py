@@ -38,4 +38,8 @@ urlpatterns = [
         template_name="pages/local/doylestown.html"), name="local_doylestown"),
 
 
+    ## ADVERTISING LANDING PAGES ##
+    path('website-seo-audit', TemplateView.as_view(
+        template_name="pages/landing/site_audit.html"), name="website_audit"),
+
 ]

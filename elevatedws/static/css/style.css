@@ -376,6 +376,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.nav-button {
+  background: #4ec1ee;
+  border: 2px solid #69caf0;
+  color: #fff!important;
+  border-radius: 25px;
+}
+
+.nav-button:hover {
+  background: #007bff!important;
+  border-color: #fff!important;
+  color: #fff!important;
+}
+
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/

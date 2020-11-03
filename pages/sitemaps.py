@@ -16,7 +16,8 @@ class StaticViewSitemap(Sitemap):
                 'port_sepacoldwar',
                 'port_infinity_caterers',
                 'port_tasty_table',
-                'local_doylestown'
+                'local_doylestown',
+                'website_audit',
                 ]
 
     def location(self, item):
