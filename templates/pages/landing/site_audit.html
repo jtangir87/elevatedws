@@ -2,8 +2,20 @@
 {% load static %}
 
 {% block title_tag %}
-Free Website SEO Audit Report
+Free Website Performance Report
 {% endblock title_tag %}
+
+{% block meta_tags %}
+  <meta content="Check the Usability, Performance, SEO, and Security of your website in under 5 minutes" name="description">
+  <meta content="web design, website development, digital marketing, social media management" name="keywords">
+  <link rel="canonical" href="https://elevatedwebsystems.com/website-seo-audit" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://elevatedwebsystems.com/website-seo-audit" />
+	<meta property="og:title" content="Free Website Performance Report" />
+	<meta property="og:description" content="Check the Usability, Performance, SEO, and Security of your website in under 5 minutes" />
+  <meta property="og:image" content="{% static 'img/website-audit-og-img.png' %}" />
+{% endblock meta_tags %}
+
 
 {% block headscript %}
 <link href="{% static 'css/landing.css' %}" rel="stylesheet">
@@ -15,13 +27,13 @@ Free Website SEO Audit Report
   <section id="landing-intro" class="clearfix">
     <div class="container" data-aos="fade-up">
       <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Free Website Audit Report!</h1>
+        <h1>Get Your Free Website Performance Report!</h1>
         <ul>
-            <li>Check your SEO, Usability, Performance, Social, and Security</li>
+            <li>Check your SEO, Usability, Performance, and Security</li>
             <li>13 page detailed report</li>
             <li>Emailed as PDF</li>
-            <li>Suggested improvements</li>
-            
+            <li>Actionable suggested improvements</li>
+            <li>Report ready in under 5 minutes</li>
         </ul>
             <form class="so-widget-form mb-4" id="so1604362999" action="https://www.websiteauditserver.com/process-embedded.inc" target="so-iframe" data-behaviour="modal" data-title="Website Report for " data-touch="Thank you for requesting a report. We'll be in touch shortly!" onsubmit="return soSubmit(this)">
                 <input id="so-typeso1604362999" type="hidden" name="type" value="web">
@@ -34,7 +46,7 @@ Free Website SEO Audit Report
                     <input type="text" name="domain" id="so-domainso1604362999" class="so-fieldso1604362999" placeholder="Your Website" data-validation="Please enter a correct website domain">
                                                 <input type="text" name="email" id="so-emailso1604362999" class="so-fieldso1604362999" placeholder="E-Mail" data-validation="Please enter your email">
                                         <input type="text" name="phone" id="so-phoneso1604362999" class="so-fieldso1604362999" placeholder="Phone Number" data-validation="Please enter your phone">
-                                    <input type="submit" id="so-submitso1604362999" value="Get Your Report">
+                                    <input type="submit" id="so-submitso1604362999" value="Run My Report">
                         </div>
             </form>
 <script type="text/javascript">
