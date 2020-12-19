@@ -201,12 +201,7 @@
     });
   }
   $(window).on('load', function () {
-    AOS.init({
-      disable: function () {
-        var maxWidth = 500;
-        return window.innerWidth < maxWidth;
-      }
-    });
+    AOS.init();
   });
 
 })(jQuery);
