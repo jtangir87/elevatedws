@@ -26,8 +26,12 @@
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/c47990e7cb.js" crossorigin="anonymous"></script>  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
-  {% comment %} <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet"> {% endcomment %}
+  <script src="https://kit.fontawesome.com/c47990e7cb.js" async defer crossorigin="anonymous"></script>  
+
+
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}"></noscript>
+
   <link rel="stylesheet" href="{% static 'vendor/venobox/venobox.css' %}" media="none" onload="if(media!='all')media='all'">
   <noscript><link rel="stylesheet" href="{% static 'vendor/venobox/venobox.css' %}"></noscript>
   
@@ -35,7 +39,7 @@
  
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-  <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+  
   {% block headscript %}
   {% endblock headscript %}
 <!-- Start of HubSpot Embed Code -->

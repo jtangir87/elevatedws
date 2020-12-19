@@ -1,6 +1,9 @@
   {% extends 'base.html' %}
   {% load static %}
 
+  {% block headscript %}
+  <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+  {% endblock headscript %}
 
   {% block content %}
  
