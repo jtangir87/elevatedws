@@ -201,7 +201,12 @@
     });
   }
   $(window).on('load', function () {
-    aos_init();
+    AOS.init({
+      disable: function () {
+        var maxWidth = 500;
+        return window.innerWidth < maxWidth;
+      }
+    });
   });
 
 })(jQuery);
