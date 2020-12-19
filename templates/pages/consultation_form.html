@@ -38,11 +38,15 @@
 
         <div class="form-page">
           <h1 style="width:100%">Schedule Your Free Consultation!</h1>
-          <form method="POST" class="mb-4">
+          <form method="POST" class="mb-4" id="consultationForm">
             {% bootstrap_form_errors form %}
             {% bootstrap_form form %}
             {% csrf_token %}
-            {% bootstrap_button "Submit" button_type="submit" %}
+            <button class="btn btn-primary g-recaptcha"
+              data-sitekey="reCAPTCHA_site_key" 
+              data-callback='onSubmit' 
+              data-action='submit' 
+              type="submit">Submit</button>
             </form>
         </div>
         </div>
@@ -52,3 +56,12 @@
   </main><!-- End #main -->
 
 {% endblock content %}
+
+{% block footscript %}
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+   function onSubmit(token) {
+     document.getElementById("consultationForm").submit();
+   }
+ </script>
+{% endblock footscript %}

@@ -47,7 +47,6 @@ def consultation_form(request):
                 'name': data["name"],
                 'email': data["email"],
                 'phone': data["phone"],
-                "date": data["date"],
                 "description": data["description"]
             }
 
