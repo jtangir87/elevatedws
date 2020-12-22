@@ -1,9 +1,9 @@
 from django.urls import path
 from django.views.generic import TemplateView
-from .views import contact_us, consultation_form, website_service
+from .views import home_view, contact_us, consultation_form, website_service
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path('', home_view, name="home"),
     path('contact', contact_us, name="contact_us"),
     path('consultation-request', consultation_form, name="consultation_form"),
     path('client-connect', TemplateView.as_view(

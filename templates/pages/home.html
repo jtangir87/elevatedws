@@ -277,6 +277,54 @@
 
       </div>
     </section><!-- End Why Us Section -->
+
+    <!-- =======  Blog Grid ======= -->
+    <section id="services" class="section-bg blog-grid grid">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Recent Blog Posts</h3>
+        </header>
+
+        <div class="row">
+        
+        {% for blog in blogs %}
+          <div class="col-md-4">
+            <div class="card-box-b blog-box">
+            
+              <div class="img-box-b">
+                <img src="{{blog.header_img.url}}" alt="" class="img-b img-fluid">
+              </div>
+              {% comment %} <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="{% url 'blog:blog_detail' slug=blog.slug %}">{{blog.title}}</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">{{blog.created_at|date:"M j, Y"}}</span>
+                  </div>
+                </div>
+              </div>
+               {% endcomment %}
+            </div>
+            <div class="blog-title">
+                <h3>
+                    <a href="{% url 'blog:blog_detail' slug=blog.slug %}">{{blog.title}}</a>
+                </h3>
+                <div class="card-date">
+                    <p>{{blog.created_at|date:"M j, Y"}}</p>
+                </div>
+            </div>
+          </div>
+
+         {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Grid--> 
     <!-- ======= Team Section ======= -->
     {% comment %} <section id="team">
       <div class="container" data-aos="fade-up">
