@@ -77,5 +77,5 @@ def consultation_form(request):
 def website_service(request):
     # blogs = BlogPost.objects.filter(
     #     Q(categories__name="Web Design") | Q(categories__name="Web Development")).distinct()[:3]
-    blogs = BlogPost.objects.all()[:3]
+    blogs = BlogPost.objects.all()[:6]
     return render(request, "pages/services/websites.html", {"blogs": blogs})
