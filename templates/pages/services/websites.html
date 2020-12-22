@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_tag %}
+Website Design and Development Company
+{% endblock title_tag %}
+
+{% block meta_tags %}
+    <meta content="Custom designed and developed websites for small and medium sized businesses" name="description">
+    <meta content="" name="keywords">
+    <link rel="canonical" href="https://elevatedwebsystems.com/services/website-design-development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elevatedwebsystems.com/services/website-design-development" />
+    <meta property="og:title" content="Website Design and Development Company" />
+    <meta property="og:description" content="Custom designed and developed websites for small and medium sized businesses" />
+    <meta property="og:image" content="{% static 'img/elevatedws-og-img.png' %}" />
+{% endblock meta_tags %}
+
+{% block content %}
+
+<main id="main">
+  <!-- ======= Intro Section ======= -->
+  <section class="hero clearfix" style="background:linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(105, 202, 240, 0.6)), url('{% static 'img/website-design-planning.jpg' %}') center center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="intro-info text-center" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Website Design Agency</h1>
+        <h3>Anyone can set up a website with Wordpress or Wix templates. We hard code every aspect of your website so it is tailored exactly to your needs and perfectly optimized.</h3>
+      </div>
+
+    </div>
+  </section><!-- End Intro Section -->
+
+
+    <section class="inner-page services-page pt-4">
+      <div class="container">
+        <div class="section-title">
+            <h2>About Our Web Design and Development Services</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Designing and developing your website is an honor and privilege. Your website is your customer's first impression of your business, 
+                    and we take that responsibility very seriously! Every website is we design and develop is responsive, mobile-friendly, and optimized 
+                    for SEO performance. While we specialize in custom-built web applications like online appointment scheduling, CRM systems, 
+                    and e-commerce builds ... we love working on projects of all shapes and sizes!
+                </p>
+                <p>We have built websites for many different industries but some of our favorites are:</p>
+            </div>
+            <div class="col-md-2 col-6">
+                <ul class="design-industries">
+                    <li><i class="fas fa-hard-hat"></i> Construction</li>
+                    <li><i class="fas fa-user-md"></i> Medical</li>
+                    <li><i class="fas fa-gavel"></i> Legal</li>
+                    <li><i class="fas fa-hands-helping"></i> Non-profit</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-6">
+                <ul class="design-industries">
+                    <li><i class="fas fa-utensils"></i> Food Service</li>
+                    <li><i class="fas fa-shopping-cart"></i> E-Commerce</li>
+                    <li><i class="fas fa-store"></i> Retail</li>
+                    <li><i class="fas fa-coins"></i> Financial</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ======= Process Section ======= -->
+    <section id="process" class="process mb-4 mt-4">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Process</h2>
+          <p>Don't be intimidated by the steps we take to make the perfect website for you! You can choose to be as involved as you'd like or leave the majority up to our experience.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Research & Planning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Content Curation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Launch</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Research & Planning</h3>
+                    <p class="font-italic">There is no guess work when it comes to designing and developing your new website. </p>
+                    <p>During this phase of the process, we will have an extensive conversation about your goals, get a better understanding of your customers, and learn about your competition.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/website-idea-board-planning.jpg' %}" alt="idea board for website planning" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Content Curation</h3>
+                    <p class="font-italic">Strategic and well planned content designed to reach your target audience.</p>
+                    <p>Every image and word on your new website should be done with thought and intent. Whether we are targeting specific keywords or compelling someone to act on a call to action, the content
+                    curation segment of our process implements and achieves goals set in the previous phase.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/website-content-curation.jpg' %}" alt="people meeting at conference table looking at charts" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Design</h3>
+                    <p class="font-italic">Creating a digital representation of your brand</p>
+                    <p>Fancy animations don't drive conversions. Content and user experience do. Here, we work through the user experience, brand implementation, and sales funnel for your potential customers. Engaging
+                    visuals and targeted messaging direct our design process.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/website-design.jpg' %}" alt="hand drawn website design content layout" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Development</h3>
+                    <p class="font-italic">Responsive, mobile-friendly and optimized for speed. </p>
+                    <p>Since we code our websites ourselves instead of using builders like Wordpress and Wix our sites are extremely well engineered from the beginning. We development websites with a mobile-first indexing approach so that they are optimized for SEO performance while still being beautiful, creative, and very functional.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/website-development.jpg' %}" alt="web developer screenshot lines of html code" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Launch</h3>
+                    <p class="font-italic">Superior hosting and maintenance</p>
+                    <p>Because we maintain our own servers instead of using a 3rd party provider we are able to provide the best in class perfomance, complimentary SSL certificates, and 99.9% uptime. 
+                    Offering affordable monthly maintence plans that cover site security updates, minor copy or image changes, and scheduled form testing.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/website-servers.jpg' %}" alt="photo of servers" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Process Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <p>We understand that your website is the digital representation of your business.</p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="far fa-gem"></i>
+              <div class="card-body">
+                <h5 class="card-title">Our Quality</h5>
+                <p class="card-text">We stand by 100% of the products and services we deliver. Compromising quality is never an option and our core promise is to never "Nickel-and-Dime" you. Our clients are our top priorty!</p>
+                {% comment %} <a href="#" class="readmore">Read more </a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="far fa-handshake"></i>
+              <div class="card-body">
+                <h5 class="card-title">Our Approach</h5>
+                <p class="card-text">To us, it's not just work - we take pride in every product we deliver. We take pride in building strong partnerships with our clients and watching their business excel beyond their goals.</p>
+                {% comment %} <a href="#" class="readmore">Read more </a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fas fa-concierge-bell"></i>
+              <div class="card-body">
+                <h5 class="card-title">Our Service</h5>
+                <p class="card-text">Every project comes with free support for bug fixes and critical issues. Keeping your site healthy and live is our #1 priority</p>
+                {% comment %} <a href="#" class="readmore">Read more </a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-12 text-center">
+            <span data-toggle="counter-up">8,247</span>
+            <p>Coffees</p>
+          </div>
+
+          <div class="col-lg-4 col-12 text-center">
+            <span data-toggle="counter-up">94</span>
+            <p>Website Projects</p>
+          </div>
+
+          <div class="col-lg-4 col-12 text-center">
+            <span data-toggle="counter-up">1,913,103</span>
+            <p>Lines of Code</p>
+          </div>
+            <div class="col-12 text-center">
+                <a href="{% url 'consultation_form' %}" class="btn-consultation">Schedule Your Free Consultation</a>
+            </div>
+          {% comment %} <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">64</span>
+            <p>Happy Customers</p>
+          </div> {% endcomment %}
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+
+    {% include 'pages/includes/partial_portfolio_list.html' %}
+    
+    <!-- End Portfolio Section -->
+    <!-- ======= Testimonials Section ======= -->
+      {% include 'pages/includes/partial_testimonial_list.html' %}
+    <!-- End Testimonials Section -->
+    <!-- =======  Blog Grid ======= -->
+    <section class="blog-grid grid mt-4">
+      <div class="container">
+
+        <div class="section-title">
+            <h2>Recent Blog Posts</h2>
+        </div>
+
+        <div class="row">
+        
+        {% for blog in blogs %}
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow blog-box">
+            
+              <div class="img-box-b">
+                <img src="{{blog.header_img.url}}" alt="" class="img-b img-fluid">
+              </div>
+              {% comment %} <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="{% url 'blog:blog_detail' slug=blog.slug %}">{{blog.title}}</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">{{blog.created_at|date:"M j, Y"}}</span>
+                  </div>
+                </div>
+              </div>
+               {% endcomment %}
+            </div>
+            <div class="blog-title">
+                <h3>
+                    <a href="{% url 'blog:blog_detail' slug=blog.slug %}">{{blog.title}}</a>
+                </h3>
+                <div class="card-date">
+                    <p>{{blog.created_at|date:"M j, Y"}}</p>
+                </div>
+            </div>
+          </div>
+
+         {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Grid--> 
+
+
+  </main><!-- End #main -->
+
+{% endblock content %}

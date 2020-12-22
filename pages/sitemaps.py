@@ -6,6 +6,7 @@ class StaticViewSitemap(Sitemap):
     def items(self):
         return ['home',
                 'contact_us',
+                'serv_websites',
                 'port_event_dispatch',
                 'port_ggrc',
                 'port_lovenotevideo',

@@ -5,6 +5,11 @@ from django.core.mail import send_mail
 from .forms import ConsultationForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.db.models import Q
+
+
+from blog.models import BlogPost
+
 # Create your views here.
 
 
@@ -67,3 +72,9 @@ def consultation_form(request):
         form = ConsultationForm()
 
     return render(request, 'pages/consultation_form.html', {'form': form})
+
+
+def website_service(request):
+    blogs = BlogPost.objects.filter(
+        Q(categories__name="Web Design") | Q(categories__name="Web Development")).distinct()[:3]
+    return render(request, "pages/services/websites.html", {"blogs": blogs})

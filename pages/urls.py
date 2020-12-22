@@ -1,6 +1,6 @@
 from django.urls import path
 from django.views.generic import TemplateView
-from .views import contact_us, consultation_form
+from .views import contact_us, consultation_form, website_service
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -8,6 +8,9 @@ urlpatterns = [
     path('consultation-request', consultation_form, name="consultation_form"),
     path('client-connect', TemplateView.as_view(
         template_name="pages/sendible_client_connect.html"), name="client_connect"),
+
+    ## SERVICE PAGES ##
+    path('website-design', website_service, name="serv_websites"),
 
 
     ## PORTFOLIO DETAILS ##
