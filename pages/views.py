@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.db.models import Q
 
-
 from blog.models import BlogPost
 
 # Create your views here.
@@ -36,10 +35,13 @@ def contact_us(request):
             ['info@elevatedwebsystems.com'],
             fail_silently=False,
         )
-        data["form_is_valid"] = True
-    else:
-        data["form_is_valid"] = False
-    return JsonResponse(data)
+        # data["form_is_valid"] = True
+        messages.success(
+            request, "Thank you! We will get back to you soon!")
+        return HttpResponseRedirect('/')
+    # else:
+    #     data["form_is_valid"] = False
+    # return JsonResponse(data)
 
 
 def consultation_form(request):
