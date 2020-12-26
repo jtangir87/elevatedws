@@ -212,9 +212,12 @@
   <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
   <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
   <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
+  {% block footscript %}
+  {% endblock footscript %}
 </body>
 
 </html>
