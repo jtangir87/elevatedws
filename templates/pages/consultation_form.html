@@ -42,7 +42,8 @@
             {% bootstrap_form_errors form %}
             {% bootstrap_form form %}
             {% csrf_token %}
-            <button class="btn btn-primary g-recaptcha"
+            <button id="consultationFormSubmit"
+              class="btn btn-primary g-recaptcha"
               data-sitekey="6LdqwxUaAAAAACQ2hZJ54JuCOWOBAvxZuRHTd-mw" 
               data-callback='onSubmit' 
               data-action='submit'>Submit</button>
