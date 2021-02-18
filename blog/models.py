@@ -30,9 +30,11 @@ def blog_uploads(instance, filename):
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=200)
+    meta_desc = models.CharField(max_length=170, blank=True, null=True)
     categories = models.ManyToManyField(BlogCategory)
     page_css = models.TextField(blank=True, null=True)
     header_img = models.ImageField(upload_to=blog_uploads)
+    header_img_alt = models.CharField(max_length=200, blank=True, null=True)
     slug = models.SlugField()
     post = HTMLField()
     page_js = models.TextField(blank=True, null=True)
