@@ -77,7 +77,18 @@
               </div><!-- End sidebar recent posts-->
 
             </div><!-- End sidebar -->
+            <div id="scrollingDiv" class="sidebar" data-aos="fade-left">
+              <div class="sidebar-item blog-subscribe">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "8328055",
+                  formId: "e8c54672-98ae-4337-97e0-c09762bd5448"
+                });
+                </script>
 
+              </div><!-- End sidebar blog-subscribe-->
+            </div>
           </div><!-- End blog sidebar -->
 
         </div>
@@ -89,3 +100,12 @@
 
 
    {% endblock content %}
+
+{% block blog_footscript %}
+<script src="{% static 'vendor/jquery.sticky.js' %}"></script>
+<script>
+  $(document).ready(function(){
+    $("#scrollingDiv").sticky({topSpacing:145, bottomSpacing:500});
+  });
+</script>
+{% endblock blog_footscript %}
