@@ -14,6 +14,8 @@ urlpatterns = [
 
 
     ## PORTFOLIO DETAILS ##
+    path('portfolio/laura-silverstein-blog-website-design', TemplateView.as_view(
+        template_name="pages/portfolio/laurasilverstein.html"), name="port_laurasilverstein"),
     path('portfolio/event-dispatch-employee-scheduling-app', TemplateView.as_view(
         template_name="pages/portfolio/event_dispatch.html"), name="port_event_dispatch"),
     path('portfolio/ggrc-info-site', TemplateView.as_view(

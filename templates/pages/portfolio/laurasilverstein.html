@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_tag %}Website Portfolio | Laura Silverstein | Personal Brand & Blog {% endblock title_tag %}
+{% block meta_tags %}
+  <meta content="online ordering platform that allowed the vendor to have complete control of their menu, categories, wording, and site-design." name="description">
+  <link rel="canonical" href="https://elevatedwebsystems.com{% url 'port_laurasilverstein' %}" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="App Portfolio | Laura Silverstein | Personal Brand & Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://elevatedwebsystems.com{% url 'port_laurasilverstein' %}" />
+  <meta property="og:image" content="{% static 'img/portfolio/laurasilverstein1.jpg' %}" />
+  <meta property="og:description" content="personal brand website for couples therapist Laura Silverstein to promote her blog and courses" />
+  <meta property="og:site_name" content="Elevated Web Systems" />
+{% endblock meta_tags %}
+
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Portfolio</li>
+            <li>Laura Silverstein</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="{% static 'img/portfolio/laurasilverstein1.jpg' %}" class="img-fluid" alt="">
+            {% comment %} <img src="{% static 'img/portfolio/catertogo2.png' %}" class="img-fluid" alt="">
+            <img src="{% static 'img/portfolio/catertogo3.png' %}" class="img-fluid" alt=""> {% endcomment %}
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Website / Blog </li>
+              <li><strong>Client</strong>: Laura Silverstein </li>
+              <li><strong>Project date</strong>: March 2021</li>
+              <li><strong>Project URL</strong>: <a href="https://www.laurasilverstein.co" target="_blank">www.laurasilverstein.co</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Laura Silverstein</h1>
+          <p>
+            Laura Silverstein approached Elevated Web Systems to help her build a high converting personal brand website. She is a highly successful couples therapist and has a growing following on her Medium blog. 
+          </p>
+          <p>
+            The goal of the site was to provide landing pages to send her Medium readers where we could collect email addresses to use for future marketing purposes. We accomplished this through the creation of lead magnets and 
+            inviting calls to action throughout the entire site. 
+          </p>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

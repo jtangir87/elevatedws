@@ -20,7 +20,22 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-blog">
+            <div class="portfolio-wrap">
+              <picture>
+                <source srcset="{% static 'img/portfolio/laurasilverstein-thumb.jpg' %}" type="image/webp" class="img-fluid" alt="Laura Silverstein website design screenshot">
+                <img src="{% static 'img/portfolio/laurasilverstein1.jpg' %}" class="img-fluid" alt="Laura Silverstein website design screenshot">
+              </picture>
+              <div class="portfolio-info">
+                <h4><a href="{% url 'port_laurasilverstein' %}">Laura Silverstein</a></h4>
+                <p>Website</p>
+                <div>
+                  <a href="{% static 'img/portfolio/laurasilverstein1.jpg' %}" data-gall="portfolioGallery" title="Laura Silverstein Website Design" class="venobox link-preview"><i class="far fa-eye"></i></a>
+                  <a href="{% url 'port_laurasilverstein' %}" class="link-details" title="More Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-blog">
             <div class="portfolio-wrap">
               <picture>
